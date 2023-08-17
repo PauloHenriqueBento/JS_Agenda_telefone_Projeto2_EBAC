@@ -13,20 +13,20 @@ form.addEventListener('submit', e => {
 })
 
 function adicionaLinha() {
-    const inputNomeAtividade = document.getElementById('nome');
-    const notaAtividade = document.getElementById('telefone');
+    const inputNome = document.getElementById('nome');
+    const inputTelefone = document.getElementById('telefone');
 
-    nome.push(inputNomeAtividade.value);
-    telefone.push(parseFloat(notaAtividade.value));
+    nome.push(inputNome.value);
+    telefone.push(parseFloat(inputTelefone.value));
 
     let linha = '<tr>';
-    linha += `<td>${inputNomeAtividade.value}</td>`;
-    linha += `<td>${notaAtividade.value}</td>`;
+    linha += `<td>${inputNome.value}</td>`;
+    linha += `<td>${inputTelefone.value}</td>`;
     linha += '</tr>';
 
     linhas += linha;
-    inputNomeAtividade.value = '';
-    notaAtividade.value = '';
+    inputNome.value = '';
+    inputTelefone.value = '';
 }
 
 function atualizaTabela() {
