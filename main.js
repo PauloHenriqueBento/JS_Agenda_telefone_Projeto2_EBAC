@@ -2,7 +2,7 @@ const form = document.getElementById('form-atividade');
 const imgAprovado = '<img src="./images/aprovado.png" alt="Emoji celebrando"/>';
 const imgReprovado = '<img src="./images/reprovado.png" alt="Emoji decepcionado"/>';
 const nome = [];
-const notas = [];
+const telefone = [];
 
 let linhas = '';
 
@@ -17,7 +17,7 @@ function adicionaLinha() {
     const notaAtividade = document.getElementById('telefone');
 
     nome.push(inputNomeAtividade.value);
-    notas.push(parseFloat(notaAtividade.value));
+    telefone.push(parseFloat(notaAtividade.value));
 
     let linha = '<tr>';
     linha += `<td>${inputNomeAtividade.value}</td>`;
